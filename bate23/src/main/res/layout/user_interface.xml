@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:backgroundTint="#27aeff"
+        >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="骚 扰 拦 截 系 统"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="157dp"/>
+
+        <ImageButton
+            android:id="@+id/main_like"
+            android:src="@drawable/fengche"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            />
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/main_top">
+        <RelativeLayout
+            android:id="@+id/dark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#999999"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/blacklist"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="黑名单列表"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2980b9">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginBottom="39dp"
+                    android:text="电话拦截记录"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/textView"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/bancall"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="18dp"
+                    android:id="@+id/imageView" android:layout_marginBottom="-15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#27ae60">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sms1"/>
+            <TextView
+                    android:id="@+id/text_email_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginBottom="31dp"
+                    android:text="短信拦截记录"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/setting_setting"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#27aeff" android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting2"/>
+            <TextView
+                    android:id="@+id/text_setting_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="33dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="拦截设置"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+

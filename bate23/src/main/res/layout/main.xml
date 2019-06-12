@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@drawable/login3"
+            android:id="@+id/imageView" android:layout_marginTop="430dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/login" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp" app:srcCompat="@drawable/registaa"
+            android:id="@+id/imageView3" android:layout_marginTop="430dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView" app:layout_constraintBottom_toTopOf="@+id/regist"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="54dp" android:layout_marginEnd="54dp"
+    />
+    <Button
+            android:text="@string/regist"
+            android:layout_width="90dp"
+            android:background="@color/darkgrey"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/regist"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintEnd_toStartOf="@+id/login"
+            android:layout_marginBottom="40dp" app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"/>
+    <Button
+            android:text="@string/login"
+            android:background="@color/darkgrey"
+            android:textColor="@color/white"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"/>
+    <Button
+            android:text="@string/skip"
+            android:background="@color/darkgrey"
+            android:textColor="@color/white"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/skip"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/regist"
+            android:layout_marginStart="8dp" android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/login"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalDesign</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">登录</string>
+    <string name="regist">注册</string>
+    <string name="back">返回</string>
+    <string name="skip">SKIP</string>
+    <string name="password">密码:</string>
+    <string name="username">账号:</string>
+    <string name="happiness_in_busyness">Happiness in busyness</string>
+</resources>
